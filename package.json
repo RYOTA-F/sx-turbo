@@ -4,6 +4,8 @@
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",
+    "dev:nest": "turbo run dev --scope=nest",
+    "dev:next": "turbo run dev --scope=next",
     "lint": "turbo lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
@@ -14,5 +16,8 @@
   "packageManager": "pnpm@8.9.0",
   "engines": {
     "node": ">=18"
-  }
+  },
+  "workspaces": [
+    "apps/nest"
+  ]
 }
